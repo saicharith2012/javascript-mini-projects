@@ -29,7 +29,12 @@ function save() {
 }
 
 // clears all the count and entries
+function warn() {
+  alert("all your count will be erased! Do you want to continue?");
+}
+
 function clearAll() {
+  warn();
   count = 0;
   countEl.textContent = count;
   console.log(count);
