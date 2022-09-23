@@ -4,6 +4,8 @@ let input = document.getElementById("userinput")
 // console.log(input)
 let button = document.getElementById("enter")
 // console.log(enter)
+let clear = document.getElementById("clear")
+// console.log(clear)
 let ul = document.querySelector("ul")
 // console.log(ul)
 
@@ -34,6 +36,14 @@ function addListByKeyPress(event){
     }
 }
 
+function clearlist(){
+    alert("Are you sure you want to erase the list? All your data will be lost!!")
+    ul.textContent = ""
+}
+
+
 button.addEventListener("click",addListByClick)
+
+clear.addEventListener("click",clearlist)
 
 input.addEventListener("keypress",addListByKeyPress)
