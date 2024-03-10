@@ -10,16 +10,23 @@
   </head>
 
   <body>
-    <h1>Passengers Entered</h1>
+    <h1>PASSENGER COUNTER</h1>
     <div class="card"></div>
     <div class="box">
       <h2 id="count-el">0</h2>
-      <button id="increment-btn" onclick="increment()">INCREMENT</button><br />
-      <button id="save-btn" onclick="save()">SAVE</button>
-      <div>
-        <p id="save-el">Previous Entries: </p>
+      <div class="buttons">
+        <button id="increment-btn" onclick="increment()">+</button><br />
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <button id="decrement-btn" onclick="decrement()">&#8209;</button><br />
       </div>
-      <button id="clear-btn" onclick="clearAll()">CLEAR</button>
+
+      <div id="save-container">
+        <p id="prev">Previous Entries: </p>
+        <div id="save-el">
+          <p id="save-content"></p>
+        </div>
+      </div>
+        <button id="clear-btn" onclick="clearAll()">CLEAR</button>
     </div>
 
     <script src="script.js"></script>
